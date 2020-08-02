@@ -21,9 +21,9 @@ type KeyLogger struct {
 // New creates a new keylogger for a device path
 func New(devPath string) (*KeyLogger, error) {
 	k := &KeyLogger{}
-	if !k.IsRoot() {
-		return nil, errors.New("Must be run as root")
-	}
+	//if !k.IsRoot() {
+	//	return nil, errors.New("Must be run as root")
+	//}
 	fd, err := os.Open(devPath)
 	k.fd = fd
 	return k, err
