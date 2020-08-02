@@ -3,7 +3,7 @@ package keylogger
 import (
 	"bytes"
 	"encoding/binary"
-	"errors"
+	//"errors"
 	"fmt"
 	"io/ioutil"
 	"os"
